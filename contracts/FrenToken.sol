@@ -3,7 +3,7 @@ pragma solidity 0.6.12;
 import "./libs/BEP20.sol";
 
 // EggToken with Governance.
-contract FrenToken is BEP20('FrenStreet Token', 'VIKING') {
+contract FrenToken is BEP20('FrenStreet Token', 'FREN') {
     /// @notice Creates `_amount` token to `_to`. Must only be called by the owner (MasterChef).
     function mint(address _to, uint256 _amount) public onlyOwner {
         _mint(_to, _amount);
